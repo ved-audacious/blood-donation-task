@@ -14,25 +14,38 @@
 }
 
 .subContainer{
-    height: 560px;
-    width: 400px;
-    /* background-image: url("../assets/multic.png"); */
+    min-height: 700px;
+    width: 1000px;
+    
     border: 1px solid rgb(248, 244, 244);
-    background-color:rgb(112, 104, 118);
-    padding: 2px;
+    background-color:rgb(112, 104, 118,0.71);
+    padding: 36px;
     margin: auto;
     justify-content: center;
     border-radius: 20px;
+    
 }
+.h1{
+ color: white;   
+ text-align: center;
+}
+
 
 .labels{
     font-weight: bold;
 }
+.btn_div{
+    /* text-align: center; */
+    display: flex;
+    justify-content: space-around;
+
+}
+
 
 .Btn{
-    padding: 5px;
+    padding: 8px;
     background-color: rgb(24, 83, 161);
     color: rgb(246, 247, 250);
-    border-radius: 8px;
-    margin-left: 170px;
+    border-radius: 12px;
+    
 }

@@ -7,8 +7,9 @@ const RegistrationForm = () => {
     <div className="mainContainer">
       <div className='subContainer'>
 
-        <Form>
-
+        <Form className='form_donor'>
+           <h1 className='h1'>ADD NEW DONOR</h1>
+            <h4>New Donor ID : {}</h4>
           <Row>
             <Col md={6}>
               <FormGroup>
@@ -16,8 +17,8 @@ const RegistrationForm = () => {
                   Firstname
                 </Label>
                 <Input
-
-                  placeholder="Firstname"
+                  id='firstname'
+                  
                   type="text"
                 />
               </FormGroup>
@@ -28,9 +29,9 @@ const RegistrationForm = () => {
                   Lastname
                 </Label>
                 <Input
-
-                  placeholder="Lastname"
-                  type="text"
+                id='lastname'
+                   
+                type="text"
                 />
               </FormGroup>
             </Col>
@@ -40,10 +41,11 @@ const RegistrationForm = () => {
             <Col md={6}>
               <FormGroup>
                 <Label className='labels'>
-                  Fathers Name
+                  Father's Name
                 </Label>
                 <Input
-
+                id='fathersname'
+                
                   type="text"
                 />
               </FormGroup>
@@ -51,9 +53,11 @@ const RegistrationForm = () => {
             <Col md={6}>
               <FormGroup>
                 <Label className='labels'>
-                  Mothers Name
+                  Mother's Name
                 </Label>
                 <Input
+                id='mothersname'
+                
                   type="text"
                 />
               </FormGroup>
@@ -68,9 +72,8 @@ const RegistrationForm = () => {
                   Date of Birth
                 </Label>
                 <Input
-                  id="exampleDate"
-                  name="date"
-                  placeholder="date placeholder"
+                  id="Date"
+                         
                   type="date"
                 />
               </FormGroup>
@@ -81,11 +84,12 @@ const RegistrationForm = () => {
                   Gender
                 </Label>
                 <Input
-                  name="select"
+                  id="gender"
+                      
                   type="select"
                 >
                   <option>
-                    Select
+                    
                   </option>
                   <option>
                     Male
@@ -109,11 +113,11 @@ const RegistrationForm = () => {
                   Blood Group
                 </Label>
                 <Input
-                  name="select"
+                id="bloodgroup"
                   type="select"
                 >
                   <option>
-                    Select
+                    
                   </option>
                   <option>
                     A+
@@ -149,9 +153,9 @@ const RegistrationForm = () => {
                   City
                 </Label>
                 <Input
-
-                  placeholder="Lastname"
-                  type="text"
+                id='city'
+                         
+                type="text"
                 />
               </FormGroup>
             </Col>
@@ -168,8 +172,8 @@ const RegistrationForm = () => {
                   Mobile Number
                 </Label>
                 <Input
-
-                  placeholder="Firstname"
+                id='mobilenumber'
+              
                   type="number"
                 />
               </FormGroup>
@@ -180,10 +184,9 @@ const RegistrationForm = () => {
                   Email
                 </Label>
                 <Input
-
-
-                  placeholder="Enter your email"
-                  type="email"
+                id='email'
+                            
+                 type="email"
                 />
               </FormGroup>
             </Col>
@@ -196,13 +199,17 @@ const RegistrationForm = () => {
               Complete Address
             </Label>
             <Input
-              
-              name="text"
-              type="text"
+              className='textarea'
+                        
+             type="textarea"
             />
           </FormGroup>
            </Col>
-         <button className='Btn'> Add Donor</button>
+        <div className='btn_div'>
+        <button className='Btn'> Add Donor</button>
+        <button className='Btn'> Reset</button>
+        <button className='Btn'> Close</button>
+        </div> 
     
 
 
