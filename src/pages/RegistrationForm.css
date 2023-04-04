@@ -1,0 +1,38 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+
+.mainContainer{
+    background-image: url("../assets/mainBac.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 800px;
+    display: flex;
+
+}
+
+.subContainer{
+    height: 560px;
+    width: 400px;
+    /* background-image: url("../assets/multic.png"); */
+    border: 1px solid rgb(248, 244, 244);
+    background-color:rgb(112, 104, 118);
+    padding: 2px;
+    margin: auto;
+    justify-content: center;
+    border-radius: 20px;
+}
+
+.labels{
+    font-weight: bold;
+}
+
+.Btn{
+    padding: 5px;
+    background-color: rgb(24, 83, 161);
+    color: rgb(246, 247, 250);
+    border-radius: 8px;
+    margin-left: 170px;
+}
